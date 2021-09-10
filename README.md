@@ -1,2 +1,2 @@
 # leetcode_practice
-personal leetcode data storage
+## leetcode 刷题代码存档
