@@ -8,7 +8,7 @@ def twoSum(nums, target):
         else:
             return[dict[target - nums[i]] , i]
 
-nums = [3,2,4]
-target = 6
+nums = [1,2,5]
+target = 7
 output = twoSum(nums, target)
 print(output)
