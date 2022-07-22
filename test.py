@@ -1,21 +1,27 @@
-def func(input):
+#（a,e,i,o,u)
+# If you need to import additional packages or classes, please import here.
+
+def func(x):
 
     # please define the python3 input here. For example: a,b = map(int, input().strip().split())
     # please finish the function body here.
     # please define the python3 output here. For example: print().
-    n = len(input)
-    word, count = 1, 0
-    for i in range(0, n):
-        if input[i] == ' ':
-            word += 1
-            continue
+    n = len(x)
+    ans = []
+    for i in range(n):
+        if x[i] == ' ':
+            t = x[i]
+        if x[i] == 'A' or x[i] == 'E' or x[i] == 'I' or x[i] == 'O' or x[i] == 'U':
+            t = x[i]
+        if x[i] == 'a' or x[i] == 'e' or x[i] == 'i' or x[i] == 'o' or x[i] == 'o':
+            t = x[i].upper()
         else:
-            count += 1
-    print('word = ',word)
-    print('count = ', count)
-    output = count / word
-    print('%.2f' %output)
-
+            t = x[i].lower()
+        ans.append(t)
+    return ans
+    
 if __name__ == "__main__":
-    input = 'Who Love Solo'
-    func(input)
+    #x = input()
+    x = 'Who Love Solo'
+    y = func(x)
+    print("".join(y))
