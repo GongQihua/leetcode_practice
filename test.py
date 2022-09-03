@@ -1,8 +1,11 @@
 #（a,e,i,o,u)
 # If you need to import additional packages or classes, please import here.
+
 def func(x):
 
- 
+    # please define the python3 input here. For example: a,b = map(int, input().strip().split())
+    # please finish the function body here.
+    # please define the python3 output here. For example: print().
     n = len(x)
     ans = []
     for i in range(n):
