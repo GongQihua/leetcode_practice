@@ -1,9 +1,5 @@
 #（a,e,i,o,u)
 # If you need to import additional packages or classes, please import here.
-
-from re import A
-
-
 def func(x):
 
  
