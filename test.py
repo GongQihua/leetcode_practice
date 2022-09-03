@@ -1,6 +1,9 @@
 #（a,e,i,o,u)
 # If you need to import additional packages or classes, please import here.
 
+from re import A
+
+
 def func(x):
 
     # please define the python3 input here. For example: a,b = map(int, input().strip().split())
