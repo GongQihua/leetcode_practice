@@ -28,5 +28,5 @@ class Solution:
             return (getKthElement(totalLength // 2) + getKthElement(totalLength // 2 + 1)) / 2
         
 '''
-二分查找，每次，两个数组，各取一半比大小，寻找大数组的中位数
+二分查找，每次，两个数组，各取k//2-1比大小，寻找大数组的中位数
 '''
