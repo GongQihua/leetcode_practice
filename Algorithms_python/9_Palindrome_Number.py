@@ -12,3 +12,7 @@ class Solution:
             return True
         else:
             return False
+        
+'''
+不能用字符串反转的情况下，直接反转数字最方便，去掉符号，反转数字。
+'''
