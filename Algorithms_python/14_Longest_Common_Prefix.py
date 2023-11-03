@@ -7,3 +7,6 @@ class Solution:
                     return strs[0][:i]
                 
         return strs[0]
+'''
+这是最快捷写法，直接顺序遍历检查
+'''
