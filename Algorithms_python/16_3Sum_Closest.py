@@ -2,7 +2,7 @@ class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         def twoSumClosest(nums, start, end, target):
             res = 0
-            diff = 10000
+            diff = 100000
             while start < end:
                 val = nums[start] + nums[end]
                 if val == target:
@@ -18,7 +18,7 @@ class Solution:
 
         nums.sort()
         res, n = 0, len(nums)
-        diff = 10000
+        diff = 100000
         for i in range(n - 2):
             t = twoSumClosest(nums, i + 1, n - 1, target - nums[i])
             if abs(nums[i] + t - target) < diff:
