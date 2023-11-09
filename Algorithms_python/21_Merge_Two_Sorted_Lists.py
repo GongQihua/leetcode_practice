@@ -13,10 +13,10 @@ class Solution:
             else:
                 cur.next = l2
                 l2 = l2.next
-            #print("cur=",cur.val)
-            #print("dummy=",dummy.val)
             cur = cur.next
-            #print("cur.next=",cur.val)
-            #print("dummy.next=",dummy.val)
+
         cur.next = l1 or l2
         return dummy.next
+'''
+我们可以用迭代的方法来实现上述算法。当 l1 和 l2 都不是空链表时，判断 l1 和 l2 哪一个链表的头节点的值更小，将较小值的节点添加到结果里，当一个节点被添加到结果里之后，将对应链表中的节点向后移一位。
+'''
