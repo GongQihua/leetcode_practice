@@ -23,3 +23,11 @@ class Solution:
 用两次二分查找寻找左边界和右边界
 主意找到的最初边界要等于寻找数，而不是在一个范围内
 '''
+
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        l = bisect_left(nums, target)
+        r = bisect_left(nums, target + 1)
+        return [-1, -1] if l == r else [l, r - 1]
+    
+'''python可以用bisect，二分查找的函数'''
