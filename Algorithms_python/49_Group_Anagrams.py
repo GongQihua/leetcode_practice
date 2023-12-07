@@ -8,4 +8,5 @@ class Solution:
 '''
 如题，做法是哈希表的思路，建立一个字典，将不同字符串组合sorted重排列后，作为字典的key
 然后将不同的排列形式存入key下，最后返回字典的value
+如果没有join那步，list会不能转成string。
 '''
