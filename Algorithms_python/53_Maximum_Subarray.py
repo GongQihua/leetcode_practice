@@ -5,3 +5,6 @@ class Solution: #动态规划
             f = i + max(f,0)
             res = max(res,f)
         return res
+'''
+逐个数累加，当累加小于0了，就置位
+'''
