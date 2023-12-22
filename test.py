@@ -1,27 +1,21 @@
-#（a,e,i,o,u)
-# If you need to import additional packages or classes, please import here.
-
-def func(x):
-
-    # please define the python3 input here. For example: a,b = map(int, input().strip().split())
-    # please finish the function body here.
-    # please define the python3 output here. For example: print().
-    n = len(x)
-    ans = []
-    for i in range(n):
-        if x[i] == ' ':
-            t = x[i]
-        if x[i] == 'A' or x[i] == 'E' or x[i] == 'I' or x[i] == 'O' or x[i] == 'U':
-            t = x[i]
-        if x[i] == 'a' or x[i] == 'e' or x[i] == 'i' or x[i] == 'o' or x[i] == 'o':
-            t = x[i].upper()
-        else:
-            t = x[i].lower()
-        ans.append(t)
-    return ans
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        ans = []
+        vis = [False] * (n + 1)
+        for i in range(n):
+            fact = 1
+            for j in range(1, n - i):
+                fact *= j
+            for j in range(1, n + 1):
+                if not vis[j]:
+                    if k > fact:
+                        k -= fact
+                    else:
+                        ans.append(str(j))
+                        vis[j] = True
+                        break
+        return ''.join(ans)
     
 if __name__ == "__main__":
-    #x = input()
-    x = 'Who Love Solo'
-    y = func(x)
-    print("".join(y))
+    ans = Solution.getPermutation(None,6,3)
+    print("Final answer:",ans)
