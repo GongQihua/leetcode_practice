@@ -22,9 +22,9 @@ class Solution:
             slow, fast = slow.next, fast.next
             #print('slow2 = ',slow.val)
             #print('fast2 = ',fast.val)
-        start = slow.next
-        slow.next = None
-        fast.next = head
+        start = slow.next #定义现在的head
+        slow.next = None #原来的slow位置，现在作为最后一位，后面没有l
+        fast.next = head #现在的fast作为开头，要接上原来的head
         return start
 '''
 代码分两段，用空格隔开了
