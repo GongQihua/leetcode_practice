@@ -12,5 +12,5 @@ class Solution:
         return matrix[left // n][left % n] == target
 '''
 二分查找找中间数，比对中间数和target
-找中间数的方法要注意，m*n-1是为什么要搞懂
+我们将二维矩阵逻辑展开，然后二分查找即可,注意数序列，mod的时候。
 '''
