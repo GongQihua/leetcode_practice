@@ -1,17 +1,16 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        def dfs(u, t):
-            if u == len(nums):
-                print(t)
+        def dfs(i: int):
+            if i == len(nums):
                 ans.append(t[:])
                 return
-            dfs(u + 1, t)
-            t.append(nums[u])
-            dfs(u + 1, t)
+            dfs(i + 1)
+            t.append(nums[i])
+            dfs(i + 1)
             t.pop()
-        
         ans = []
-        dfs(0, [])
+        t = []
+        dfs(0)
         return ans
 '''
 dfs深度搜索算法
