@@ -9,7 +9,7 @@ class Solution:
         if root is None:
             return []
         ans = []
-        q = deque([root])
+        q = deque([root]) #初始只进去了一个主节点，len=1
         while q:
             t = []
             for _ in range(len(q)):

@@ -23,9 +23,10 @@ class Solution:
             if left:
                 t.reverse()
             ans.append(t)
-            left = not left
+            left = not left #正反写入的方法
         return ans
 
 '''
-与上一题几乎类似，写法和思路都没有变化，就加一条在每层的内容结束的时候反转，就能完美符合题目
+与上一题几乎类似，写法和思路都没有变化，就加一条在每层的内容结束的时候,
+一层数组正着写入，下一组倒着写入，就能完美符合题目
 '''
