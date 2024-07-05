@@ -1,12 +1,16 @@
 class Solution {
 public:
-    int climbStairs(int n) {
-        int p = 0, q = 0, r = 1;
-        for (int i = 0; i < n; ++i){
-            p = q;
-            q = r;
-            r = p+q;
+    int mySqrt(int x) {
+        int l = 0, r = x;
+        while (l < r){
+            int mid = (l + r + 1ll) >> 1;
+            if (mid > x / mid){
+                r = mid - 1;
+            }
+            else{
+                l = mid;
+            }
         }
-        return r;
+        return l;
     }
 };
