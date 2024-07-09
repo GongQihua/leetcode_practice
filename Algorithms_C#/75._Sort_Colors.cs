@@ -1,0 +1,22 @@
+public class Solution {
+    public void SortColors(int[] nums) {
+        int i = -1, j = nums.Length, k = 0;
+       while (k < j){
+        if (nums[k] == 0){
+            swap(nums, ++i, k++);
+        }
+        else if (nums[k] == 2){
+            swap(nums, --j, k);
+        }
+        else{
+            ++k;
+        }
+       } 
+    }
+
+    public void swap(int[] nums, int i, int j){
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
+    }
+}
