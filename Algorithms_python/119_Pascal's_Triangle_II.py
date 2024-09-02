@@ -4,7 +4,7 @@ class Solution:
         for i in range(2, rowIndex + 1):
             for j in range(i-1, 0, -1):
                 row[j] += row[j-1]
-                print(row)
+                #print(row)
         return row
 '''
 杨辉三角累加法，先打出一个全是1的list
