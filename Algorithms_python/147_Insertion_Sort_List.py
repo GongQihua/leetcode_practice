@@ -5,23 +5,27 @@
 #         self.next = next
 class Solution:
     def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head is None or head.next is None:
+        if not head:
             return head
-        dummy = ListNode(head.val, head)
-        pre, cur = dummy, head
-        while cur:
-            if pre.val <= cur.val:
-                pre, cur = cur, cur.next
-                continue
-            p = dummy
-            while p.next.val <= cur.val:
-                p = p.next
-            t = cur.next
-            cur.next = p.next
-            p.next = cur
-            pre.next = t
-            cur = t
-        return dummy.next
+        
+        dummyHead = ListNode(0)
+        dummyHead.next = head
+        lastSorted = head
+        curr = head.next
+
+        while curr:
+            if lastSorted.val <= curr.val:
+                lastSorted = lastSorted.next
+            else:
+                prev = dummyHead
+                while prev.next.val <= curr.val:
+                    prev = prev.next
+                lastSorted.next = curr.next
+                curr.next = prev.next
+                prev.next = curr
+            curr = lastSorted.next
+            
+        return dummyHead.next
 
 '''
 遍历链表，每次将遍历到的结点 cur 与前一个结点 pre 进行值比较：
