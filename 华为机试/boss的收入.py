@@ -1,10 +1,8 @@
 from collections import defaultdict
 from collections import deque
 
-g = defaultdict(list)
-
 def solve():
-    global g
+    g = defaultdict(list)
     m = int(input())
     N = int(1e6+5)
     n = 0
