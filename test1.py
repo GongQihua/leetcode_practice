@@ -1,22 +1,29 @@
-def is_prime(n):
-    return n > 1 and all(n % d for d in range(2, int(n**.5) + 1))
+import re
 
-def reverse(x):
-    ans = 0
-    while x:
-        ans = 10 * ans + x % 10
-        x /= 10
-    return ans
+def solve(info):
+    # 使用正则表达式提取所有形如 (x,y) 的坐标对
+    pattern = re.compile(r'\((\d+),(\d+)\)')
+    matches = pattern.findall(info)
+    
+    max_dis = 0
+    max_index = "(0,0)"
+    
+    for x_str, y_str in matches:
+        # 检查 x 和 y 是否以 0 开头
+        if x_str.startswith('0') or y_str.startswith('0'):
+            continue
+        
+        x = int(x_str)
+        y = int(y_str)
+        
+        # 检查 x 和 y 是否在 (0, 1000) 范围内
+        if 0 < x < 1000 and 0 < y < 1000:
+            dis = x ** 2 + y ** 2
+            if dis > max_dis:
+                max_dis = dis
+                max_index = f"({x},{y})"
+    
+    return max_index
 
-def main():
-    N  = int(input())
-    while True:
-        if N == reverse(N) and is_prime(N):
-            return N
-        N += 1
-        if 10**7 < N < 10**8:
-            N = 10**8
-
-if __name__ == '__main__':
-    ans = main()
-    print(ans)
+# 测试
+print(solve(input()))
