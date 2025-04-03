@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08867ed-3ef4-4e8b-a5b2-1e2fe4a2b6cb" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode_practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -117,8 +116,11 @@
       <workItem from="1741248631019" duration="6241000" />
       <workItem from="1741261647688" duration="55000" />
       <workItem from="1741505664418" duration="541000" />
-      <workItem from="1743392637545" duration="882000" />
-      <workItem from="1743409948046" duration="591000" />
+      <workItem from="1742883731000" duration="1031000" />
+      <workItem from="1743072889175" duration="3314000" />
+      <workItem from="1743076411785" duration="321000" />
+      <workItem from="1743076748703" duration="5000" />
+      <workItem from="1743122680881" duration="13000" />
     </task>
     <servers />
   </component>
@@ -143,7 +145,7 @@
     <SUITE FILE_PATH="coverage/leetcode_practice$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1722433057459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode_practice$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1722513710720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode_practice$6_.coverage" NAME="6_贪心的商人 覆盖结果" MODIFIED="1741250280828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/华为机试" />
-    <SUITE FILE_PATH="coverage/leetcode_practice$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1722430980986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode_practice$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1743074677134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode_practice$test1.coverage" NAME="test1 覆盖结果" MODIFIED="1741249063745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode_practice$5_.coverage" NAME="5_流浪地球 覆盖结果" MODIFIED="1741249001710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/华为机试" />
     <SUITE FILE_PATH="coverage/leetcode_practice$test.coverage" NAME="test 覆盖结果" MODIFIED="1732759913027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
